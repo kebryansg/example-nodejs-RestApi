@@ -1,0 +1,25 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3307,
+  "username": "kbsg",
+  "password": "kbsg",
+  "database": "soso",
+  "synchronize": false,
+  "logging": true,
+  "logger": "file",
+  "entities": [
+    "src/entity/*.ts"
+  ],
+  "subscribers": [
+    "src/subscriber/*.js"
+  ],
+  "migrations": [
+    "src/migration/*{.js,.ts}"
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
