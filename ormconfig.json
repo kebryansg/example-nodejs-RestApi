@@ -1,15 +1,17 @@
 {
-  "type": "mysql",
-  "host": "localhost",
-  "port": 3307,
-  "username": "kbsg",
-  "password": "kbsg",
-  "database": "soso",
+  "name": "default",
+  "type": "mssql",
+  "host": "SQL5059.site4now.net",
+  "port": 1433,
+  "username": "DB_A5D988_qcomprar_admin",
+  "password": "qcomprar2020",
+  "database": "DB_A5D988_qcomprar",
+  "schema": "dbo",
   "synchronize": false,
-  "logging": true,
+  "logging": false,
   "logger": "file",
   "entities": [
-    "src/entity/*.ts"
+    "src/entity/*{.js,.ts}"
   ],
   "subscribers": [
     "src/subscriber/*.js"
